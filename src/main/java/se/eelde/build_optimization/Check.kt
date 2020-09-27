@@ -46,7 +46,7 @@ sealed class Check(val aDefault: CheckSeverity, val link: String, val hints: Lis
     class JvmXms(val size: Memory) : Check(aDefault = CheckSeverity.ENABLED_ENFORCED,
             link = "https://docs.gradle.org/current/userguide/build_environment.html#sec:configuring_jvm_memory",
             hints = listOf("Expecting more jvm xms memory to be defined",
-                    "gradle.properties >> org.gradle.jvmargs=-Xmx500m"),
+                    "gradle.properties >> org.gradle.jvmargs=-Xms500m"),
             praise = "You have ample jvm xms memory assigned :+1")
 
     class UTF8FileEncoding(val charset: Charset) : Check(aDefault = CheckSeverity.ENABLED_RECOMMENDED,

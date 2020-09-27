@@ -11,19 +11,19 @@ Plugin published [here](https://plugins.gradle.org/plugin/se.eelde.build-optimiz
 ##### Use it
 ```kotlin
 plugins {
-  id("se.eelde.build-optimizations") version "0.1.1"
+  id("se.eelde.build-optimizations") version "0.1.3"
 }
 ```
 
 ##### Test it (locally):
 ```shell script
-./gradlew :publishMavenLocal
+./gradlew :publishToMavenLocal
 ```
 
 ```kotlin
 buildscript {
     dependencies {
-        classpath("se.eelde.build-optimizations:se.eelde.build-optimizations.gradle.plugin:0.1.1")
+        classpath("se.eelde.build-optimizations:se.eelde.build-optimizations.gradle.plugin:0.1.3")
     }
 }
 

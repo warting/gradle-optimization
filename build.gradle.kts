@@ -65,7 +65,7 @@ gradlePlugin {
     }
 }
 
-version = "0.1.2"
+version = "0.1.3"
 
 pluginBundle {
     website = "http://www.eelde.se/"
